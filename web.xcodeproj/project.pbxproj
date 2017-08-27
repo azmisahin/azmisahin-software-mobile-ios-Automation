@@ -15,6 +15,8 @@
 		BAA35A471F537279000CE74A /* DateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA35A461F537279000CE74A /* DateExtensionsTests.swift */; };
 		BAA35A491F53740F000CE74A /* DecimalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA35A481F53740F000CE74A /* DecimalExtensions.swift */; };
 		BAA35A4B1F5374BC000CE74A /* DecimalExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA35A4A1F5374BC000CE74A /* DecimalExtensionsTests.swift */; };
+		BAA35A4D1F5375CB000CE74A /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA35A4C1F5375CB000CE74A /* DoubleExtensions.swift */; };
+		BAA35A4F1F5376B4000CE74A /* DoubleExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA35A4E1F5376B4000CE74A /* DoubleExtensionsTests.swift */; };
 		BAA912C91F5339F600B4B9E8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA912C81F5339F600B4B9E8 /* Home.storyboard */; };
 		BAF121841F5345580080A0A0 /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121831F5345580080A0A0 /* HomeTests.swift */; };
 		BAF121871F5347E30080A0A0 /* ExpandTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */; };
@@ -56,6 +58,8 @@
 		BAA35A461F537279000CE74A /* DateExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtensionsTests.swift; path = Extensions/DateExtensionsTests.swift; sourceTree = "<group>"; };
 		BAA35A481F53740F000CE74A /* DecimalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecimalExtensions.swift; path = Extensions/DecimalExtensions.swift; sourceTree = "<group>"; };
 		BAA35A4A1F5374BC000CE74A /* DecimalExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecimalExtensionsTests.swift; path = Extensions/DecimalExtensionsTests.swift; sourceTree = "<group>"; };
+		BAA35A4C1F5375CB000CE74A /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleExtensions.swift; path = Extensions/DoubleExtensions.swift; sourceTree = "<group>"; };
+		BAA35A4E1F5376B4000CE74A /* DoubleExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleExtensionsTests.swift; path = Extensions/DoubleExtensionsTests.swift; sourceTree = "<group>"; };
 		BAA912C81F5339F600B4B9E8 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Boards/Home.storyboard; sourceTree = "<group>"; };
 		BAF121831F5345580080A0A0 /* HomeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTests.swift; path = Home/HomeTests.swift; sourceTree = "<group>"; };
 		BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExpandTableCell.xib; path = Views/ExpandTableCell/ExpandTableCell.xib; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 				BAF1218A1F535A720080A0A0 /* ButtonDelegate.swift */,
 				BAA35A441F537155000CE74A /* DateExtensions.swift */,
 				BAA35A481F53740F000CE74A /* DecimalExtensions.swift */,
+				BAA35A4C1F5375CB000CE74A /* DoubleExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				BAF121921F5366840080A0A0 /* ButtonDelegateTests.swift */,
 				BAA35A461F537279000CE74A /* DateExtensionsTests.swift */,
 				BAA35A4A1F5374BC000CE74A /* DecimalExtensionsTests.swift */,
+				BAA35A4E1F5376B4000CE74A /* DoubleExtensionsTests.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -451,6 +457,7 @@
 				BAF121891F53480C0080A0A0 /* ExpandTableCell.swift in Sources */,
 				BAA35A451F537155000CE74A /* DateExtensions.swift in Sources */,
 				BA18ADC31F51BF9D00075A38 /* AppDelegate.swift in Sources */,
+				BAA35A4D1F5375CB000CE74A /* DoubleExtensions.swift in Sources */,
 				BAF1218B1F535A720080A0A0 /* ButtonDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAF121931F5366850080A0A0 /* ButtonDelegateTests.swift in Sources */,
+				BAA35A4F1F5376B4000CE74A /* DoubleExtensionsTests.swift in Sources */,
 				BAA35A4B1F5374BC000CE74A /* DecimalExtensionsTests.swift in Sources */,
 				BAF121911F535C2B0080A0A0 /* MockBase.swift in Sources */,
 				BAA35A471F537279000CE74A /* DateExtensionsTests.swift in Sources */,
