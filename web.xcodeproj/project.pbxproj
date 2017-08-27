@@ -13,6 +13,8 @@
 		BA18ADCF1F51C38000075A38 /* Content.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA18ADCE1F51C38000075A38 /* Content.xcassets */; };
 		BAA912C91F5339F600B4B9E8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA912C81F5339F600B4B9E8 /* Home.storyboard */; };
 		BAF121841F5345580080A0A0 /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121831F5345580080A0A0 /* HomeTests.swift */; };
+		BAF121871F5347E30080A0A0 /* ExpandTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */; };
+		BAF121891F53480C0080A0A0 /* ExpandTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121881F53480C0080A0A0 /* ExpandTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		BA3FD58B1F50E84900354E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAA912C81F5339F600B4B9E8 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Boards/Home.storyboard; sourceTree = "<group>"; };
 		BAF121831F5345580080A0A0 /* HomeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTests.swift; path = Home/HomeTests.swift; sourceTree = "<group>"; };
+		BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExpandTableCell.xib; path = Views/ExpandTableCell/ExpandTableCell.xib; sourceTree = "<group>"; };
+		BAF121881F53480C0080A0A0 /* ExpandTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpandTableCell.swift; path = Views/ExpandTableCell/ExpandTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +215,7 @@
 		BAD70FFF1F519A83002D3820 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BAF121851F5347700080A0A0 /* ExpandTableCell */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -256,6 +261,15 @@
 				BAF121831F5345580080A0A0 /* HomeTests.swift */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		BAF121851F5347700080A0A0 /* ExpandTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */,
+				BAF121881F53480C0080A0A0 /* ExpandTableCell.swift */,
+			);
+			name = ExpandTableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +384,7 @@
 				BA18ADCF1F51C38000075A38 /* Content.xcassets in Resources */,
 				BA18ADCB1F51C2A800075A38 /* Introduction.storyboard in Resources */,
 				BAA912C91F5339F600B4B9E8 /* Home.storyboard in Resources */,
+				BAF121871F5347E30080A0A0 /* ExpandTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF121891F53480C0080A0A0 /* ExpandTableCell.swift in Sources */,
 				BA18ADC31F51BF9D00075A38 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
