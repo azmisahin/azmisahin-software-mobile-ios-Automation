@@ -12,6 +12,7 @@
 		BA18ADCD1F51C36500075A38 /* App.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA18ADCC1F51C36500075A38 /* App.xcassets */; };
 		BA18ADCF1F51C38000075A38 /* Content.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA18ADCE1F51C38000075A38 /* Content.xcassets */; };
 		BAA912C91F5339F600B4B9E8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA912C81F5339F600B4B9E8 /* Home.storyboard */; };
+		BAF121841F5345580080A0A0 /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121831F5345580080A0A0 /* HomeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		BA3FD5851F50E84900354E2B /* webUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = webUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA3FD58B1F50E84900354E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAA912C81F5339F600B4B9E8 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Boards/Home.storyboard; sourceTree = "<group>"; };
+		BAF121831F5345580080A0A0 /* HomeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTests.swift; path = Home/HomeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +253,7 @@
 		BAD710051F519B79002D3820 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BAF121831F5345580080A0A0 /* HomeTests.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 					};
 					BA3FD5841F50E84900354E2B = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BA3FD5651F50E84900354E2B;
 					};
@@ -405,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF121841F5345580080A0A0 /* HomeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,10 +582,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = webUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.azmisahin.mobile.ios.webUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = web;
 			};
@@ -590,6 +597,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = webUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.azmisahin.mobile.ios.webUITests;
