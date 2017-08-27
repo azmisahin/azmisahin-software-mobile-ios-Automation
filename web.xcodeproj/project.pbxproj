@@ -21,6 +21,8 @@
 		BAA35A531F537B1A000CE74A /* StringExtenionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA35A521F537B1A000CE74A /* StringExtenionsTests.swift */; };
 		BAA35A551F538272000CE74A /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA35A541F538272000CE74A /* UIApplicationExtensions.swift */; };
 		BAA35A571F5384D3000CE74A /* UIApplicationExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA35A561F5384D3000CE74A /* UIApplicationExtensionsTests.swift */; };
+		BAA35A591F53889E000CE74A /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA35A581F53889E000CE74A /* UIColorExtensions.swift */; };
+		BAA35A5B1F538AEA000CE74A /* UIColorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA35A5A1F538AEA000CE74A /* UIColorExtensionsTests.swift */; };
 		BAA912C91F5339F600B4B9E8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA912C81F5339F600B4B9E8 /* Home.storyboard */; };
 		BAF121841F5345580080A0A0 /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121831F5345580080A0A0 /* HomeTests.swift */; };
 		BAF121871F5347E30080A0A0 /* ExpandTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */; };
@@ -68,6 +70,8 @@
 		BAA35A521F537B1A000CE74A /* StringExtenionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtenionsTests.swift; path = Extensions/StringExtenionsTests.swift; sourceTree = "<group>"; };
 		BAA35A541F538272000CE74A /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIApplicationExtensions.swift; path = Extensions/UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		BAA35A561F5384D3000CE74A /* UIApplicationExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIApplicationExtensionsTests.swift; path = Extensions/UIApplicationExtensionsTests.swift; sourceTree = "<group>"; };
+		BAA35A581F53889E000CE74A /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensions.swift; path = Extensions/UIColorExtensions.swift; sourceTree = "<group>"; };
+		BAA35A5A1F538AEA000CE74A /* UIColorExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensionsTests.swift; path = Extensions/UIColorExtensionsTests.swift; sourceTree = "<group>"; };
 		BAA912C81F5339F600B4B9E8 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Boards/Home.storyboard; sourceTree = "<group>"; };
 		BAF121831F5345580080A0A0 /* HomeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTests.swift; path = Home/HomeTests.swift; sourceTree = "<group>"; };
 		BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExpandTableCell.xib; path = Views/ExpandTableCell/ExpandTableCell.xib; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 				BAA35A4C1F5375CB000CE74A /* DoubleExtensions.swift */,
 				BAA35A501F5378A8000CE74A /* StringExtensions.swift */,
 				BAA35A541F538272000CE74A /* UIApplicationExtensions.swift */,
+				BAA35A581F53889E000CE74A /* UIColorExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 				BAA35A4E1F5376B4000CE74A /* DoubleExtensionsTests.swift */,
 				BAA35A521F537B1A000CE74A /* StringExtenionsTests.swift */,
 				BAA35A561F5384D3000CE74A /* UIApplicationExtensionsTests.swift */,
+				BAA35A5A1F538AEA000CE74A /* UIColorExtensionsTests.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -465,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA35A591F53889E000CE74A /* UIColorExtensions.swift in Sources */,
 				BAA35A491F53740F000CE74A /* DecimalExtensions.swift in Sources */,
 				BAF121891F53480C0080A0A0 /* ExpandTableCell.swift in Sources */,
 				BAA35A551F538272000CE74A /* UIApplicationExtensions.swift in Sources */,
@@ -487,6 +494,7 @@
 				BAF121911F535C2B0080A0A0 /* MockBase.swift in Sources */,
 				BAA35A571F5384D3000CE74A /* UIApplicationExtensionsTests.swift in Sources */,
 				BAA35A471F537279000CE74A /* DateExtensionsTests.swift in Sources */,
+				BAA35A5B1F538AEA000CE74A /* UIColorExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
