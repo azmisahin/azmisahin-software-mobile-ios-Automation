@@ -15,6 +15,9 @@
 		BAF121841F5345580080A0A0 /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121831F5345580080A0A0 /* HomeTests.swift */; };
 		BAF121871F5347E30080A0A0 /* ExpandTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */; };
 		BAF121891F53480C0080A0A0 /* ExpandTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121881F53480C0080A0A0 /* ExpandTableCell.swift */; };
+		BAF1218B1F535A720080A0A0 /* ButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1218A1F535A720080A0A0 /* ButtonDelegate.swift */; };
+		BAF121911F535C2B0080A0A0 /* MockBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121901F535C2B0080A0A0 /* MockBase.swift */; };
+		BAF121931F5366850080A0A0 /* ButtonDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121921F5366840080A0A0 /* ButtonDelegateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		BAF121831F5345580080A0A0 /* HomeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTests.swift; path = Home/HomeTests.swift; sourceTree = "<group>"; };
 		BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExpandTableCell.xib; path = Views/ExpandTableCell/ExpandTableCell.xib; sourceTree = "<group>"; };
 		BAF121881F53480C0080A0A0 /* ExpandTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpandTableCell.swift; path = Views/ExpandTableCell/ExpandTableCell.swift; sourceTree = "<group>"; };
+		BAF1218A1F535A720080A0A0 /* ButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonDelegate.swift; path = Extensions/ButtonDelegate.swift; sourceTree = "<group>"; };
+		BAF121901F535C2B0080A0A0 /* MockBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockBase.swift; path = Mock/MockBase.swift; sourceTree = "<group>"; };
+		BAF121921F5366840080A0A0 /* ButtonDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonDelegateTests.swift; path = Extensions/ButtonDelegateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,8 @@
 		BA3FD57D1F50E84900354E2B /* webTests */ = {
 			isa = PBXGroup;
 			children = (
+				BAF1218F1F535C150080A0A0 /* Mock */,
+				BAF1218C1F535AB20080A0A0 /* Extensions */,
 				BAD710041F519B18002D3820 /* Models */,
 				BAD710031F519B11002D3820 /* Manager */,
 				BAD710021F519B08002D3820 /* Library */,
@@ -178,6 +186,7 @@
 		BAD70FFA1F519A4F002D3820 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BAF1218A1F535A720080A0A0 /* ButtonDelegate.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -272,6 +281,22 @@
 			name = ExpandTableCell;
 			sourceTree = "<group>";
 		};
+		BAF1218C1F535AB20080A0A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BAF121921F5366840080A0A0 /* ButtonDelegateTests.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		BAF1218F1F535C150080A0A0 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				BAF121901F535C2B0080A0A0 /* MockBase.swift */,
+			);
+			name = Mock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,6 +369,7 @@
 					};
 					BA3FD5791F50E84900354E2B = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BA3FD5651F50E84900354E2B;
 					};
@@ -411,6 +437,7 @@
 			files = (
 				BAF121891F53480C0080A0A0 /* ExpandTableCell.swift in Sources */,
 				BA18ADC31F51BF9D00075A38 /* AppDelegate.swift in Sources */,
+				BAF1218B1F535A720080A0A0 /* ButtonDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +445,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF121931F5366850080A0A0 /* ButtonDelegateTests.swift in Sources */,
+				BAF121911F535C2B0080A0A0 /* MockBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,10 +600,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = webTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.azmisahin.mobile.ios.webTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/web.app/web";
 			};
@@ -585,6 +616,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = webTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.azmisahin.mobile.ios.webTests;
