@@ -44,6 +44,8 @@
 		BAB2AD321F5483AA000AAEA0 /* ModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD311F5483AA000AAEA0 /* ModelsTests.swift */; };
 		BAB2AD351F5485ED000AAEA0 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD341F5485ED000AAEA0 /* Context.swift */; };
 		BAB2AD371F54875B000AAEA0 /* ContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD361F54875B000AAEA0 /* ContextTests.swift */; };
+		BAB2AD3A1F54A9B4000AAEA0 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD391F54A9B4000AAEA0 /* Logger.swift */; };
+		BAB2AD3C1F54AB50000AAEA0 /* LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD3B1F54AB50000AAEA0 /* LoggerTests.swift */; };
 		BAF121841F5345580080A0A0 /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121831F5345580080A0A0 /* HomeTests.swift */; };
 		BAF121871F5347E30080A0A0 /* ExpandTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */; };
 		BAF121891F53480C0080A0A0 /* ExpandTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121881F53480C0080A0A0 /* ExpandTableCell.swift */; };
@@ -113,6 +115,8 @@
 		BAB2AD311F5483AA000AAEA0 /* ModelsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelsTests.swift; path = Data/Models/ModelsTests.swift; sourceTree = "<group>"; };
 		BAB2AD341F5485ED000AAEA0 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Data/Context.swift; sourceTree = "<group>"; };
 		BAB2AD361F54875B000AAEA0 /* ContextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContextTests.swift; path = Data/ContextTests.swift; sourceTree = "<group>"; };
+		BAB2AD391F54A9B4000AAEA0 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Library/Logger/Logger.swift; sourceTree = "<group>"; };
+		BAB2AD3B1F54AB50000AAEA0 /* LoggerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoggerTests.swift; path = Library/LoggerTests.swift; sourceTree = "<group>"; };
 		BAF121831F5345580080A0A0 /* HomeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTests.swift; path = Home/HomeTests.swift; sourceTree = "<group>"; };
 		BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExpandTableCell.xib; path = Views/ExpandTableCell/ExpandTableCell.xib; sourceTree = "<group>"; };
 		BAF121881F53480C0080A0A0 /* ExpandTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpandTableCell.swift; path = Views/ExpandTableCell/ExpandTableCell.swift; sourceTree = "<group>"; };
@@ -181,7 +185,6 @@
 				BA18ADC11F51BAE400075A38 /* App */,
 				BAD70FF61F519A13002D3820 /* Boards */,
 				BAD70FF81F519A3F002D3820 /* Controllers */,
-				BAD70FF71F519A32002D3820 /* Components */,
 				BAB2AD211F548110000AAEA0 /* Data */,
 				BAD70FFA1F519A4F002D3820 /* Extensions */,
 				BAD70FFB1F519A57002D3820 /* Library */,
@@ -253,6 +256,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		BAB2AD381F54A98F000AAEA0 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				BAB2AD391F54A9B4000AAEA0 /* Logger.swift */,
+			);
+			name = Logger;
+			sourceTree = "<group>";
+		};
 		BAD70FF61F519A13002D3820 /* Boards */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,13 +271,6 @@
 				BAA912C81F5339F600B4B9E8 /* Home.storyboard */,
 			);
 			name = Boards;
-			sourceTree = "<group>";
-		};
-		BAD70FF71F519A32002D3820 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Components;
 			sourceTree = "<group>";
 		};
 		BAD70FF81F519A3F002D3820 /* Controllers */ = {
@@ -297,6 +301,7 @@
 		BAD70FFB1F519A57002D3820 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				BAB2AD381F54A98F000AAEA0 /* Logger */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -338,6 +343,7 @@
 		BAD710021F519B08002D3820 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				BAB2AD3B1F54AB50000AAEA0 /* LoggerTests.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -547,6 +553,7 @@
 				BAA35A451F537155000CE74A /* DateExtensions.swift in Sources */,
 				BAB2AD281F548231000AAEA0 /* Page.swift in Sources */,
 				BAA35A511F5378A8000CE74A /* StringExtensions.swift in Sources */,
+				BAB2AD3A1F54A9B4000AAEA0 /* Logger.swift in Sources */,
 				BA18ADC31F51BF9D00075A38 /* AppDelegate.swift in Sources */,
 				BAB2AD231F54814E000AAEA0 /* Data.swift in Sources */,
 				BAA35A4D1F5375CB000CE74A /* DoubleExtensions.swift in Sources */,
@@ -565,6 +572,7 @@
 				BAA35A531F537B1A000CE74A /* StringExtenionsTests.swift in Sources */,
 				BAB2AD2C1F548349000AAEA0 /* DataTests.swift in Sources */,
 				BAA35A4B1F5374BC000CE74A /* DecimalExtensionsTests.swift in Sources */,
+				BAB2AD3C1F54AB50000AAEA0 /* LoggerTests.swift in Sources */,
 				BAA35A631F538F13000CE74A /* UILabelExtensionsTests.swift in Sources */,
 				BA10F6A91F54405500F955A3 /* ResourceManagerTests.swift in Sources */,
 				BA10F6AD1F54473200F955A3 /* AppTests.swift in Sources */,
