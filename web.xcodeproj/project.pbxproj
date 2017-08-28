@@ -10,6 +10,8 @@
 		BA10F6A11F542ED900F955A3 /* ResourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10F6A01F542ED900F955A3 /* ResourceManager.swift */; };
 		BA10F6A31F54302000F955A3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA10F6A21F54302000F955A3 /* Localizable.strings */; };
 		BA10F6A91F54405500F955A3 /* ResourceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10F6A81F54405500F955A3 /* ResourceManagerTests.swift */; };
+		BA10F6AB1F54452E00F955A3 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10F6AA1F54452E00F955A3 /* App.swift */; };
+		BA10F6AD1F54473200F955A3 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10F6AC1F54473200F955A3 /* AppTests.swift */; };
 		BA18ADC31F51BF9D00075A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18ADC21F51BF9D00075A38 /* AppDelegate.swift */; };
 		BA18ADCB1F51C2A800075A38 /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA18ADCA1F51C2A800075A38 /* Introduction.storyboard */; };
 		BA18ADCD1F51C36500075A38 /* App.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA18ADCC1F51C36500075A38 /* App.xcassets */; };
@@ -64,6 +66,8 @@
 		BA10F6A01F542ED900F955A3 /* ResourceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResourceManager.swift; path = Managers/ResourceManager.swift; sourceTree = "<group>"; };
 		BA10F6A21F54302000F955A3 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Resources/Localizable.strings; sourceTree = "<group>"; };
 		BA10F6A81F54405500F955A3 /* ResourceManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResourceManagerTests.swift; path = Managers/ResourceManagerTests.swift; sourceTree = "<group>"; };
+		BA10F6AA1F54452E00F955A3 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App.swift; path = App/App.swift; sourceTree = "<group>"; };
+		BA10F6AC1F54473200F955A3 /* AppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppTests.swift; path = App/AppTests.swift; sourceTree = "<group>"; };
 		BA18ADC21F51BF9D00075A38 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = App/AppDelegate.swift; sourceTree = "<group>"; };
 		BA18ADCA1F51C2A800075A38 /* Introduction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Introduction.storyboard; path = Boards/Introduction.storyboard; sourceTree = "<group>"; };
 		BA18ADCC1F51C36500075A38 /* App.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = App.xcassets; path = Resources/App.xcassets; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				BA18ADC21F51BF9D00075A38 /* AppDelegate.swift */,
+				BA10F6AA1F54452E00F955A3 /* App.swift */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -182,8 +187,7 @@
 				BAD710041F519B18002D3820 /* Models */,
 				BAD710031F519B11002D3820 /* Managers */,
 				BAD710021F519B08002D3820 /* Library */,
-				BAD710011F519AFF002D3820 /* Global */,
-				BAD710001F519AF1002D3820 /* Core */,
+				BAD710001F519AF1002D3820 /* App */,
 				BA3FD5801F50E84900354E2B /* Info.plist */,
 			);
 			path = webTests;
@@ -279,18 +283,12 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		BAD710001F519AF1002D3820 /* Core */ = {
+		BAD710001F519AF1002D3820 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				BA10F6AC1F54473200F955A3 /* AppTests.swift */,
 			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		BAD710011F519AFF002D3820 /* Global */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Global;
+			name = App;
 			sourceTree = "<group>";
 		};
 		BAD710021F519B08002D3820 /* Library */ = {
@@ -500,6 +498,7 @@
 				BAA35A591F53889E000CE74A /* UIColorExtensions.swift in Sources */,
 				BAA35A691F5393B6000CE74A /* UIWindowExtensions.swift in Sources */,
 				BAA35A491F53740F000CE74A /* DecimalExtensions.swift in Sources */,
+				BA10F6AB1F54452E00F955A3 /* App.swift in Sources */,
 				BA10F6A11F542ED900F955A3 /* ResourceManager.swift in Sources */,
 				BAA35A5D1F538C52000CE74A /* UIFontExtensions.swift in Sources */,
 				BAA35A611F538E24000CE74A /* UILabelExtensions.swift in Sources */,
@@ -525,6 +524,7 @@
 				BAA35A4B1F5374BC000CE74A /* DecimalExtensionsTests.swift in Sources */,
 				BAA35A631F538F13000CE74A /* UILabelExtensionsTests.swift in Sources */,
 				BA10F6A91F54405500F955A3 /* ResourceManagerTests.swift in Sources */,
+				BA10F6AD1F54473200F955A3 /* AppTests.swift in Sources */,
 				BAA35A5F1F538D25000CE74A /* UIFontExtensionsTests.swift in Sources */,
 				BAF121911F535C2B0080A0A0 /* MockBase.swift in Sources */,
 				BAA35A571F5384D3000CE74A /* UIApplicationExtensionsTests.swift in Sources */,
