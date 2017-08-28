@@ -37,6 +37,13 @@
 		BAA35A691F5393B6000CE74A /* UIWindowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA35A681F5393B6000CE74A /* UIWindowExtensions.swift */; };
 		BAA35A6B1F539477000CE74A /* UIWindowExtnsionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA35A6A1F539477000CE74A /* UIWindowExtnsionsTests.swift */; };
 		BAA912C91F5339F600B4B9E8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA912C81F5339F600B4B9E8 /* Home.storyboard */; };
+		BAB2AD231F54814E000AAEA0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD221F54814E000AAEA0 /* Data.swift */; };
+		BAB2AD261F5481EE000AAEA0 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD251F5481EE000AAEA0 /* Base.swift */; };
+		BAB2AD281F548231000AAEA0 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD271F548231000AAEA0 /* Page.swift */; };
+		BAB2AD2C1F548349000AAEA0 /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD2B1F548349000AAEA0 /* DataTests.swift */; };
+		BAB2AD321F5483AA000AAEA0 /* ModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD311F5483AA000AAEA0 /* ModelsTests.swift */; };
+		BAB2AD351F5485ED000AAEA0 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD341F5485ED000AAEA0 /* Context.swift */; };
+		BAB2AD371F54875B000AAEA0 /* ContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD361F54875B000AAEA0 /* ContextTests.swift */; };
 		BAF121841F5345580080A0A0 /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121831F5345580080A0A0 /* HomeTests.swift */; };
 		BAF121871F5347E30080A0A0 /* ExpandTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */; };
 		BAF121891F53480C0080A0A0 /* ExpandTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121881F53480C0080A0A0 /* ExpandTableCell.swift */; };
@@ -99,6 +106,13 @@
 		BAA35A681F5393B6000CE74A /* UIWindowExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIWindowExtensions.swift; path = Extensions/UIWindowExtensions.swift; sourceTree = "<group>"; };
 		BAA35A6A1F539477000CE74A /* UIWindowExtnsionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIWindowExtnsionsTests.swift; path = Extensions/UIWindowExtnsionsTests.swift; sourceTree = "<group>"; };
 		BAA912C81F5339F600B4B9E8 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Boards/Home.storyboard; sourceTree = "<group>"; };
+		BAB2AD221F54814E000AAEA0 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Data/Data.swift; sourceTree = "<group>"; };
+		BAB2AD251F5481EE000AAEA0 /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Base.swift; path = Data/Models/Base.swift; sourceTree = "<group>"; };
+		BAB2AD271F548231000AAEA0 /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Page.swift; path = Data/Models/Page.swift; sourceTree = "<group>"; };
+		BAB2AD2B1F548349000AAEA0 /* DataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataTests.swift; path = Data/DataTests.swift; sourceTree = "<group>"; };
+		BAB2AD311F5483AA000AAEA0 /* ModelsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelsTests.swift; path = Data/Models/ModelsTests.swift; sourceTree = "<group>"; };
+		BAB2AD341F5485ED000AAEA0 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Data/Context.swift; sourceTree = "<group>"; };
+		BAB2AD361F54875B000AAEA0 /* ContextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContextTests.swift; path = Data/ContextTests.swift; sourceTree = "<group>"; };
 		BAF121831F5345580080A0A0 /* HomeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTests.swift; path = Home/HomeTests.swift; sourceTree = "<group>"; };
 		BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExpandTableCell.xib; path = Views/ExpandTableCell/ExpandTableCell.xib; sourceTree = "<group>"; };
 		BAF121881F53480C0080A0A0 /* ExpandTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpandTableCell.swift; path = Views/ExpandTableCell/ExpandTableCell.swift; sourceTree = "<group>"; };
@@ -168,10 +182,10 @@
 				BAD70FF61F519A13002D3820 /* Boards */,
 				BAD70FF81F519A3F002D3820 /* Controllers */,
 				BAD70FF71F519A32002D3820 /* Components */,
+				BAB2AD211F548110000AAEA0 /* Data */,
 				BAD70FFA1F519A4F002D3820 /* Extensions */,
 				BAD70FFB1F519A57002D3820 /* Library */,
 				BAD70FFC1F519A60002D3820 /* Managers */,
-				BAD70FFD1F519A67002D3820 /* Models */,
 				BAD70FFE1F519A7B002D3820 /* Resources */,
 				BAD70FFF1F519A83002D3820 /* Views */,
 				BA3FD5751F50E84900354E2B /* Info.plist */,
@@ -182,12 +196,12 @@
 		BA3FD57D1F50E84900354E2B /* webTests */ = {
 			isa = PBXGroup;
 			children = (
-				BAF1218F1F535C150080A0A0 /* Mock */,
-				BAF1218C1F535AB20080A0A0 /* Extensions */,
-				BAD710041F519B18002D3820 /* Models */,
-				BAD710031F519B11002D3820 /* Managers */,
-				BAD710021F519B08002D3820 /* Library */,
 				BAD710001F519AF1002D3820 /* App */,
+				BAB2AD291F548326000AAEA0 /* Data */,
+				BAF1218C1F535AB20080A0A0 /* Extensions */,
+				BAD710021F519B08002D3820 /* Library */,
+				BAD710031F519B11002D3820 /* Managers */,
+				BAF1218F1F535C150080A0A0 /* Mock */,
 				BA3FD5801F50E84900354E2B /* Info.plist */,
 			);
 			path = webTests;
@@ -200,6 +214,43 @@
 				BA3FD58B1F50E84900354E2B /* Info.plist */,
 			);
 			path = webUITests;
+			sourceTree = "<group>";
+		};
+		BAB2AD211F548110000AAEA0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BAB2AD241F5481CA000AAEA0 /* Models */,
+				BAB2AD221F54814E000AAEA0 /* Data.swift */,
+				BAB2AD341F5485ED000AAEA0 /* Context.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		BAB2AD241F5481CA000AAEA0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BAB2AD251F5481EE000AAEA0 /* Base.swift */,
+				BAB2AD271F548231000AAEA0 /* Page.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BAB2AD291F548326000AAEA0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BAB2AD2A1F54832B000AAEA0 /* Models */,
+				BAB2AD2B1F548349000AAEA0 /* DataTests.swift */,
+				BAB2AD361F54875B000AAEA0 /* ContextTests.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		BAB2AD2A1F54832B000AAEA0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BAB2AD311F5483AA000AAEA0 /* ModelsTests.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		BAD70FF61F519A13002D3820 /* Boards */ = {
@@ -258,13 +309,6 @@
 			name = Managers;
 			sourceTree = "<group>";
 		};
-		BAD70FFD1F519A67002D3820 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		BAD70FFE1F519A7B002D3820 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,13 +348,6 @@
 				BA10F6A81F54405500F955A3 /* ResourceManagerTests.swift */,
 			);
 			name = Managers;
-			sourceTree = "<group>";
-		};
-		BAD710041F519B18002D3820 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		BAD710051F519B79002D3820 /* Home */ = {
@@ -500,14 +537,18 @@
 				BAA35A491F53740F000CE74A /* DecimalExtensions.swift in Sources */,
 				BA10F6AB1F54452E00F955A3 /* App.swift in Sources */,
 				BA10F6A11F542ED900F955A3 /* ResourceManager.swift in Sources */,
+				BAB2AD351F5485ED000AAEA0 /* Context.swift in Sources */,
 				BAA35A5D1F538C52000CE74A /* UIFontExtensions.swift in Sources */,
 				BAA35A611F538E24000CE74A /* UILabelExtensions.swift in Sources */,
 				BAA35A651F539058000CE74A /* UIViewControllerExtensions.swift in Sources */,
 				BAF121891F53480C0080A0A0 /* ExpandTableCell.swift in Sources */,
 				BAA35A551F538272000CE74A /* UIApplicationExtensions.swift in Sources */,
+				BAB2AD261F5481EE000AAEA0 /* Base.swift in Sources */,
 				BAA35A451F537155000CE74A /* DateExtensions.swift in Sources */,
+				BAB2AD281F548231000AAEA0 /* Page.swift in Sources */,
 				BAA35A511F5378A8000CE74A /* StringExtensions.swift in Sources */,
 				BA18ADC31F51BF9D00075A38 /* AppDelegate.swift in Sources */,
+				BAB2AD231F54814E000AAEA0 /* Data.swift in Sources */,
 				BAA35A4D1F5375CB000CE74A /* DoubleExtensions.swift in Sources */,
 				BAF1218B1F535A720080A0A0 /* ButtonDelegate.swift in Sources */,
 			);
@@ -520,7 +561,9 @@
 				BAF121931F5366850080A0A0 /* ButtonDelegateTests.swift in Sources */,
 				BAA35A671F53912F000CE74A /* UIViewControllerExtensions.swift in Sources */,
 				BAA35A4F1F5376B4000CE74A /* DoubleExtensionsTests.swift in Sources */,
+				BAB2AD321F5483AA000AAEA0 /* ModelsTests.swift in Sources */,
 				BAA35A531F537B1A000CE74A /* StringExtenionsTests.swift in Sources */,
+				BAB2AD2C1F548349000AAEA0 /* DataTests.swift in Sources */,
 				BAA35A4B1F5374BC000CE74A /* DecimalExtensionsTests.swift in Sources */,
 				BAA35A631F538F13000CE74A /* UILabelExtensionsTests.swift in Sources */,
 				BA10F6A91F54405500F955A3 /* ResourceManagerTests.swift in Sources */,
@@ -528,6 +571,7 @@
 				BAA35A5F1F538D25000CE74A /* UIFontExtensionsTests.swift in Sources */,
 				BAF121911F535C2B0080A0A0 /* MockBase.swift in Sources */,
 				BAA35A571F5384D3000CE74A /* UIApplicationExtensionsTests.swift in Sources */,
+				BAB2AD371F54875B000AAEA0 /* ContextTests.swift in Sources */,
 				BAA35A471F537279000CE74A /* DateExtensionsTests.swift in Sources */,
 				BAA35A5B1F538AEA000CE74A /* UIColorExtensionsTests.swift in Sources */,
 				BAA35A6B1F539477000CE74A /* UIWindowExtnsionsTests.swift in Sources */,

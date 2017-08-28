@@ -35,6 +35,18 @@ public class App: NSObject{
         // Return
         return Singleton.managers
     }
+
+    /// Application Data
+    class var DataContext: DB.Context {
+        
+        // Singleton
+        struct Singleton{
+            static let context = DB.Context()
+        }
+        
+        // Return
+        return Singleton.context
+    }
     
     // MARK: - Define
     
@@ -56,7 +68,7 @@ public class App: NSObject{
     /// -
     var Resources: ResourceManager
     
-
+    
     // Initializers
     override init(){
         
