@@ -37,6 +37,9 @@
 		BAA35A691F5393B6000CE74A /* UIWindowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA35A681F5393B6000CE74A /* UIWindowExtensions.swift */; };
 		BAA35A6B1F539477000CE74A /* UIWindowExtnsionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA35A6A1F539477000CE74A /* UIWindowExtnsionsTests.swift */; };
 		BAA912C91F5339F600B4B9E8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA912C81F5339F600B4B9E8 /* Home.storyboard */; };
+		BAB1C7BA1F54C04900947428 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB1C7B91F54C04900947428 /* BaseController.swift */; };
+		BAB1C7BD1F54C39E00947428 /* HomeControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB1C7BC1F54C39E00947428 /* HomeControllerExtensions.swift */; };
+		BAB1C7BF1F54C3CB00947428 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB1C7BE1F54C3CB00947428 /* HomeController.swift */; };
 		BAB2AD231F54814E000AAEA0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD221F54814E000AAEA0 /* Data.swift */; };
 		BAB2AD261F5481EE000AAEA0 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD251F5481EE000AAEA0 /* Base.swift */; };
 		BAB2AD281F548231000AAEA0 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD271F548231000AAEA0 /* Page.swift */; };
@@ -110,6 +113,9 @@
 		BAA35A681F5393B6000CE74A /* UIWindowExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIWindowExtensions.swift; path = Extensions/UIWindowExtensions.swift; sourceTree = "<group>"; };
 		BAA35A6A1F539477000CE74A /* UIWindowExtnsionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIWindowExtnsionsTests.swift; path = Extensions/UIWindowExtnsionsTests.swift; sourceTree = "<group>"; };
 		BAA912C81F5339F600B4B9E8 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Boards/Home.storyboard; sourceTree = "<group>"; };
+		BAB1C7B91F54C04900947428 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseController.swift; path = Controllers/BaseController.swift; sourceTree = "<group>"; };
+		BAB1C7BC1F54C39E00947428 /* HomeControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeControllerExtensions.swift; path = Controllers/Home/HomeControllerExtensions.swift; sourceTree = "<group>"; };
+		BAB1C7BE1F54C3CB00947428 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeController.swift; path = Controllers/Home/HomeController.swift; sourceTree = "<group>"; };
 		BAB2AD221F54814E000AAEA0 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Data/Data.swift; sourceTree = "<group>"; };
 		BAB2AD251F5481EE000AAEA0 /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Base.swift; path = Data/Models/Base.swift; sourceTree = "<group>"; };
 		BAB2AD271F548231000AAEA0 /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Page.swift; path = Data/Models/Page.swift; sourceTree = "<group>"; };
@@ -223,6 +229,15 @@
 			path = webUITests;
 			sourceTree = "<group>";
 		};
+		BAB1C7BB1F54C37D00947428 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BAB1C7BC1F54C39E00947428 /* HomeControllerExtensions.swift */,
+				BAB1C7BE1F54C3CB00947428 /* HomeController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		BAB2AD211F548110000AAEA0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +303,8 @@
 		BAD70FF81F519A3F002D3820 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BAB1C7BB1F54C37D00947428 /* Home */,
+				BAB1C7B91F54C04900947428 /* BaseController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -561,6 +578,7 @@
 				BAB2AD351F5485ED000AAEA0 /* Context.swift in Sources */,
 				BAA35A5D1F538C52000CE74A /* UIFontExtensions.swift in Sources */,
 				BAA35A611F538E24000CE74A /* UILabelExtensions.swift in Sources */,
+				BAB1C7BA1F54C04900947428 /* BaseController.swift in Sources */,
 				BAA35A651F539058000CE74A /* UIViewControllerExtensions.swift in Sources */,
 				BAF121891F53480C0080A0A0 /* ExpandTableCell.swift in Sources */,
 				BAA35A551F538272000CE74A /* UIApplicationExtensions.swift in Sources */,
@@ -569,9 +587,11 @@
 				BAB2AD281F548231000AAEA0 /* Page.swift in Sources */,
 				BAA35A511F5378A8000CE74A /* StringExtensions.swift in Sources */,
 				BAB2AD3A1F54A9B4000AAEA0 /* Logger.swift in Sources */,
+				BAB1C7BF1F54C3CB00947428 /* HomeController.swift in Sources */,
 				BA18ADC31F51BF9D00075A38 /* AppDelegate.swift in Sources */,
 				BAB2AD231F54814E000AAEA0 /* Data.swift in Sources */,
 				BAA35A4D1F5375CB000CE74A /* DoubleExtensions.swift in Sources */,
+				BAB1C7BD1F54C39E00947428 /* HomeControllerExtensions.swift in Sources */,
 				BAF1218B1F535A720080A0A0 /* ButtonDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

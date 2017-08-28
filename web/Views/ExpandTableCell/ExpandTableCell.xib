@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ez6-Qm-mMK" id="wif-XF-Ipq">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oms-12-iXf">
@@ -25,7 +25,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uDr-hZ-a0d">
                                 <rect key="frame" x="8" y="17" width="75" height="75"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="QDV-Xq-Kzn"/>
                                     <constraint firstAttribute="width" constant="75" id="bfN-cP-3TF"/>
+                                    <constraint firstAttribute="height" constant="75" id="t7v-l0-is4"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qau-Wd-uK3">
@@ -57,9 +59,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiy-e2-w3H">
                         <rect key="frame" x="0.0" y="100" width="375" height="100"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIJ-m1-EeL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIJ-m1-EeL">
                                 <rect key="frame" x="8" y="9" width="357" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -73,6 +74,9 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Oo3-2R-zSD" secondAttribute="trailing" constant="8" id="GTt-vj-8mj"/>
                             <constraint firstAttribute="bottom" secondItem="Oo3-2R-zSD" secondAttribute="bottom" id="L9v-x0-xJp"/>
+                            <constraint firstItem="xIJ-m1-EeL" firstAttribute="leading" secondItem="eiy-e2-w3H" secondAttribute="leading" constant="8" id="ZZM-qb-vHW"/>
+                            <constraint firstItem="xIJ-m1-EeL" firstAttribute="top" secondItem="eiy-e2-w3H" secondAttribute="top" constant="9" id="iYQ-bi-uje"/>
+                            <constraint firstAttribute="trailing" secondItem="xIJ-m1-EeL" secondAttribute="trailing" constant="10" id="vmc-Bl-YAb"/>
                         </constraints>
                     </view>
                 </subviews>

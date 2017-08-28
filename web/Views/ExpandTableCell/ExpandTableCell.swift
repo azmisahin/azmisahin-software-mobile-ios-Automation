@@ -25,14 +25,14 @@ class ExpandTableCell: UITableViewCell {
     @IBOutlet weak var vDetail: UIView!
     @IBOutlet weak var lblDetail: UILabel!
     @IBOutlet weak var btnOk: UIButton!
- 
+    
     // Constraint
     @IBOutlet weak var constraintsContent: NSLayoutConstraint!
     
     // MARK: - Property
     
     var index: Int = 0
-
+    
     
     // MARK: - Event
     
@@ -70,7 +70,7 @@ class ExpandTableCell: UITableViewCell {
         
         // Core.Manager.ResourceManager.Get(key: "app.view.expandTableCell.BtnOk")
         self.btnOk.setTitle("Ok", for: .normal)
-
+        
     }
     
     // Set UI
@@ -103,11 +103,35 @@ class ExpandTableCell: UITableViewCell {
     
     // Action
     @IBAction func btnAction(_ sender: Any, forEvent event: UIEvent) {
-
+        
     }
     
     // MARK: - View Height
     class var DefaultHeight: CGFloat{ get { return 100 } }
     class var ExpandedHeight: CGFloat{ get { return 200 } }
+    
+    
+    // Set Cell UI
+    public static func SetCellUI(cell: ExpandTableCell) -> ExpandTableCell {
+        
+        // Background Color / odd - even
+        cell.viewContent.backgroundColor = cell.index % 2 == 0 ? UIColor.grey_500(): UIColor.grey_600()
+        
+        return cell
+    }
+    
+    // Set Cell UI
+    public static func SetModel(cell: ExpandTableCell, model: DB.Models.Page, index: Int) -> ExpandTableCell {
+        
+        // Set Model To View
+        cell.index = index
+        
+        cell.lblHead.text = model.Title
+        cell.lblComment.text = model.Description
+        cell.lblDetail.text = model.Detail
+        cell.imgPicture.image = UIImage(named: model.Picture)
+        
+        // return
+        return cell
+    }
 }
-

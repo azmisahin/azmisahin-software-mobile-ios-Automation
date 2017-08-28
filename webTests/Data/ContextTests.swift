@@ -82,8 +82,10 @@ class ContextTests: XCTestCase {
         
         print("count: \(App.DataContext.Pages.count) ")
         
+        result = App.DataContext.Pages.count > 0 ? false:true;
+        
         // Assert
-        XCTAssertEqual(App.DataContext.Pages.count, 1,"Initalize Problem");
+        XCTAssertEqual(actual, expected,"Initalize Problem");
     }
     
     // Test Application Performance
