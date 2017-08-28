@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  Base Localize [ EN ]
+
+  Created by Azmi SAHIN on 28/08/2017.
+  Copyright © 2017 Azmi SAHIN. All rights reserved.
+*/
+
+/// Application
+"App.Name"                              =   "azmisahin.com";
+"App.Version"                           =   "1.0";
+"App.Build"                             =   "1";
+"App.Domain.Name"                       =   "azmisahin.com";
+"App.Domain.Protocol"                   =   "http";
+"App.Domain.Api.Adress"                 =   "api.azmisahin.com";
+"App.Domain.Api.Application.Name"       =   "ios";
+"App.Domain.Api.Application.Version"    =   "v1";
+"App.Domain.Api.Application.Key"        =   "$screetkey$";
+
+/// Applcation Words
+"App.Words.Yes"                         =   "Yes";
+"App.Words.No"                          =   "No";
+"App.Words.Ok"                          =   "Ok";
+"App.Words.Cancel"                      =   "Cancel";
+"App.Words.Warning"                     =   "Warning";
+"App.Words.Confirm"                     =   "Confirm";
+"App.Words.Welcome"                     =   "Welcome";
+"App.Words.Detail"                      =   "Detail";
+"App.Words.New"                         =   "New";
+
+/// Application Culture
+"App.Culture.Name"                      =   "EN";
+"App.Culture.Currency.Symbol"           =   "USD";
+"App.Culture.Currency.Unit"             =   "Pcs";
+"App.Culture.Currency.Format"           =   "#.###.###,##";
+"App.Culture.Date.Format"               =   "DD.MM.YYYY";
+
+/// Application Message
+"App.Message.Error.Network"             =   "Check internet connection!";
+"App.Message.Confirm.Proccess"          =   "Confirm proccess?";
