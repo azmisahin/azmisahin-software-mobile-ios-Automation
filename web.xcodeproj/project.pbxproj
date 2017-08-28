@@ -46,6 +46,8 @@
 		BAB2AD371F54875B000AAEA0 /* ContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD361F54875B000AAEA0 /* ContextTests.swift */; };
 		BAB2AD3A1F54A9B4000AAEA0 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD391F54A9B4000AAEA0 /* Logger.swift */; };
 		BAB2AD3C1F54AB50000AAEA0 /* LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD3B1F54AB50000AAEA0 /* LoggerTests.swift */; };
+		BAB2AD3F1F54AC94000AAEA0 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD3E1F54AC94000AAEA0 /* NetworkReachability.swift */; };
+		BAB2AD411F54AD73000AAEA0 /* NetworkReachabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AD401F54AD73000AAEA0 /* NetworkReachabilityTests.swift */; };
 		BAF121841F5345580080A0A0 /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121831F5345580080A0A0 /* HomeTests.swift */; };
 		BAF121871F5347E30080A0A0 /* ExpandTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */; };
 		BAF121891F53480C0080A0A0 /* ExpandTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF121881F53480C0080A0A0 /* ExpandTableCell.swift */; };
@@ -117,6 +119,8 @@
 		BAB2AD361F54875B000AAEA0 /* ContextTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContextTests.swift; path = Data/ContextTests.swift; sourceTree = "<group>"; };
 		BAB2AD391F54A9B4000AAEA0 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Library/Logger/Logger.swift; sourceTree = "<group>"; };
 		BAB2AD3B1F54AB50000AAEA0 /* LoggerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoggerTests.swift; path = Library/LoggerTests.swift; sourceTree = "<group>"; };
+		BAB2AD3E1F54AC94000AAEA0 /* NetworkReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkReachability.swift; path = Library/Network/NetworkReachability.swift; sourceTree = "<group>"; };
+		BAB2AD401F54AD73000AAEA0 /* NetworkReachabilityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityTests.swift; path = Library/NetworkReachabilityTests.swift; sourceTree = "<group>"; };
 		BAF121831F5345580080A0A0 /* HomeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTests.swift; path = Home/HomeTests.swift; sourceTree = "<group>"; };
 		BAF121861F5347E30080A0A0 /* ExpandTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExpandTableCell.xib; path = Views/ExpandTableCell/ExpandTableCell.xib; sourceTree = "<group>"; };
 		BAF121881F53480C0080A0A0 /* ExpandTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpandTableCell.swift; path = Views/ExpandTableCell/ExpandTableCell.swift; sourceTree = "<group>"; };
@@ -264,6 +268,14 @@
 			name = Logger;
 			sourceTree = "<group>";
 		};
+		BAB2AD3D1F54AC75000AAEA0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BAB2AD3E1F54AC94000AAEA0 /* NetworkReachability.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		BAD70FF61F519A13002D3820 /* Boards */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +313,7 @@
 		BAD70FFB1F519A57002D3820 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				BAB2AD3D1F54AC75000AAEA0 /* Network */,
 				BAB2AD381F54A98F000AAEA0 /* Logger */,
 			);
 			name = Library;
@@ -344,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				BAB2AD3B1F54AB50000AAEA0 /* LoggerTests.swift */,
+				BAB2AD401F54AD73000AAEA0 /* NetworkReachabilityTests.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -540,6 +554,7 @@
 			files = (
 				BAA35A591F53889E000CE74A /* UIColorExtensions.swift in Sources */,
 				BAA35A691F5393B6000CE74A /* UIWindowExtensions.swift in Sources */,
+				BAB2AD3F1F54AC94000AAEA0 /* NetworkReachability.swift in Sources */,
 				BAA35A491F53740F000CE74A /* DecimalExtensions.swift in Sources */,
 				BA10F6AB1F54452E00F955A3 /* App.swift in Sources */,
 				BA10F6A11F542ED900F955A3 /* ResourceManager.swift in Sources */,
@@ -579,6 +594,7 @@
 				BAA35A5F1F538D25000CE74A /* UIFontExtensionsTests.swift in Sources */,
 				BAF121911F535C2B0080A0A0 /* MockBase.swift in Sources */,
 				BAA35A571F5384D3000CE74A /* UIApplicationExtensionsTests.swift in Sources */,
+				BAB2AD411F54AD73000AAEA0 /* NetworkReachabilityTests.swift in Sources */,
 				BAB2AD371F54875B000AAEA0 /* ContextTests.swift in Sources */,
 				BAA35A471F537279000CE74A /* DateExtensionsTests.swift in Sources */,
 				BAA35A5B1F538AEA000CE74A /* UIColorExtensionsTests.swift in Sources */,
